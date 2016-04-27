@@ -1,0 +1,28 @@
+[core]
+	editor = vim
+
+[alias]
+    reup = !git fetch && git rebase origin/master
+    au = !git add -u && git fetch >/dev/null && git diff --cached --no-ext-diff origin/master | grep --color=always 'pdb.set_trace()' -B 6
+    re = reset
+    dc = diff --cached
+    st = status
+    co = checkout
+    cob = checkout -b
+    com = commit
+    cm = commit -m
+    br = branch
+    sup = submodule update
+    save = !git add -A && git commit -m "SAVEPOINT"
+    wip = !git add -u && git commit -m "WIP"
+    undo = reset HEAD~1 --mixed
+    amend = commit -a --amend
+    wipe = !git add -A && git commit -qm "WIPE SAVEPOINT" && git reset HEAD~1 --hard
+    pub = "!git push -u origin $(git branch-name)"
+    branch-name = "!git rev-parse --abbrev-ref HEAD"
+    upstream = "!git rev-parse --abbrev-ref $(git branch-name)@{upstream}"
+    grepall = !"grepall() { git grep $* $(git rev-list --all); }; grepall"
+    ignore=!([ ! -e .gitignore ] && touch .gitignore) | echo $1 >>.gitignore
+
+[credential]
+	helper = osxkeychain
