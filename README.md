@@ -14,6 +14,10 @@ a development environment.
     - JAVA_HOME template and link to java jdk download page
     - intellij download link and maybe an install script that fetches a license.
 
+- Support more operating systems:
+    - MacOS
+    - CentoS
+
 # Instructions
 
 ```bash
