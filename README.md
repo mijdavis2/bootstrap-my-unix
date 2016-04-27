@@ -57,3 +57,7 @@ tar xfz ideaIU-15.0.5.tar.gz
 sudo mv idea-IU-143.2332.3 /usr/lib
 /usr/lib/idea-IU-143.2332.3/bin/idea.sh
 ```
+
+## License
+
+MIT © [mijdavis2](http://mdavisinsc.com)
