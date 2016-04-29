@@ -1,8 +1,6 @@
 # Bootstrap My Unix
 
-Because I often start from scratch and play with new distros, 
-here are some helpful configs and resources for setting up 
-a development environment.
+A collection of configs and resources for setting up a development environment.
 
 ### TODO:
 
