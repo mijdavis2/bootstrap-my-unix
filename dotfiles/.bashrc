@@ -21,3 +21,4 @@ fi
 # GIT-BASH-PROMPT ------------------------------------------------------------------
 source ~/.bash-git-prompt/gitprompt.sh
 GIT_PROMPT_ONLY_IN_REPO=1
+
