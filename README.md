@@ -12,6 +12,9 @@ sudo apt-get install git
 sudo apt-get install vim
 . ./setup.sh
 
+curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
+sudo apt-get install nodejs
+
 ```
 - Java SE (JDK) - http://www.oracle.com/technetwork/java/javase/overview/index.html
     - tar xfz that archive. 
