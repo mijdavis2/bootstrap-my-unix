@@ -29,6 +29,50 @@ sudo mv idea-IU-143.2332.3 /usr/lib
 /usr/lib/idea-IU-143.2332.3/bin/idea.sh
 ```
 
+**Python2.7.11**
+
+```
+sudo apt-get install -y \
+autotools-dev      \
+blt-dev            \
+bzip2              \
+dpkg-dev           \
+g++-multilib       \
+gcc-multilib       \
+libbluetooth-dev   \
+libbz2-dev         \
+libexpat1-dev      \
+libffi-dev         \
+libffi6            \
+libffi6-dbg        \
+libgdbm-dev        \
+libgpm2            \
+libncursesw5-dev   \
+libreadline-dev    \
+libsqlite3-dev     \
+libssl-dev         \
+libtinfo-dev       \
+mime-support       \
+net-tools          \
+netbase            \
+python-crypto      \
+python-mox3        \
+python-pil         \
+python-ply         \
+quilt              \
+tk-dev             \
+zlib1g-dev
+
+wget https://www.python.org/ftp/python/2.7.11/Python-2.7.11.tgz
+tar xfz Python-2.7.11.tgz
+cd Python-2.7.11/
+./configure --prefix /usr/local/lib/python2.7.11 --enable-ipv6
+make
+sudo make install
+
+sudo ln -s /usr/local/lib/python2.7.11/bin/python /usr/bin/python2.7.11
+```
+
 ### TODO:
 
 - [x] Add install script to do all the following: 
