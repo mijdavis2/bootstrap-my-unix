@@ -24,5 +24,5 @@
     grepall = !"grepall() { git grep $* $(git rev-list --all); }; grepall"
     ignore=!([ ! -e .gitignore ] && touch .gitignore) | echo $1 >>.gitignore
 
-[credential]
-	helper = osxkeychain
+#[credential]
+#	helper = osxkeychain

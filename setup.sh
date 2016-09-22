@@ -3,7 +3,7 @@
 cat dotfiles/.vimrc >> ~/.vimrc
 git clone https://github.com/magicmonty/bash-git-prompt.git ~/.bash-git-prompt --depth=1
 cat dotfiles/.bashrc >> ~/.bashrc
-cat dotfiles/.gitconfig > ~/.gitconfig
+cat dotfiles/.gitconfig >> ~/.gitconfig
 
 sudo add-apt-repository ppa:fkrull/deadsnakes
 sudo apt-get update
