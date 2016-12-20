@@ -3,31 +3,40 @@
 A collection of configs and resources for setting up a development environment.
 
 # Instructions
-```bash
-# !bash
-# FROM bootstrap-my-unix root directory do:
 
+### Run pre-requisites
+- Creates rsa key for github
+- Follow instructions on completion
+
+```bash
 sudo apt-get update
-sudo apt-get install git
-sudo apt-get install vim
-. ./setup.sh
-
-curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
-sudo apt-get install nodejs
-
+sudo apt-get install -y wget curl
+wget https://raw.githubusercontent.com/mijdavis2/bootstrap-my-unix/master/pre-run.sh | bash
 ```
-- Java SE (JDK) - http://www.oracle.com/technetwork/java/javase/overview/index.html
-    - tar xfz that archive. 
-    - ```mv``` the extract to /usr/lib.
-    - ```export JAVA_HOME="/usr/lib/jkd#.#.#_###" ``` in bashrc/env AND in /etc/environment
-- Intellij - https://download.jetbrains.com/idea/ideaIU-15.0.5.tar.gz
-    - get license key logging in here: https://account.jetbrains.com/licenses/assets
+
+### Clone the repo and run
+- Note that you will be prompted for your password
+
 ```bash
-#!bash
-tar xfz ideaIU-15.0.5.tar.gz
-sudo mv idea-IU-143.2332.3 /usr/lib
-/usr/lib/idea-IU-143.2332.3/bin/idea.sh
+git clone git@github.com:mijdavis2/bootstrap-my-unix.git
+cd bootstrap-my-unix
+chmod +x run.sh
+./run.sh
 ```
+
+## Intellij
+
+Get license key logging in here: https://account.jetbrains.com/licenses/assets
+
+Additional downloads here: https://confluence.jetbrains.com/display/IntelliJIDEA/Previous+IntelliJ+IDEA+Releases
+    - 
+```bash
+tar xfz ideaIU-VERSION.tar.gz
+sudo mv idea-IU-VERSION /usr/lib
+/usr/lib/idea-IU-VERSION/bin/idea.sh
+```
+
+### Optional
 
 **Python2.7.11**
 
@@ -78,13 +87,13 @@ sudo ln -s /usr/local/lib/python2.7.11/bin/python /usr/bin/python2.7.11
 - [x] Add install script to do all the following: 
     - git-bash-prompt install
     - dotfile installs
-- [ ] Add extra support:
+- [x] Add extra support:
     - JAVA_HOME template and link to java jdk download page
-    - intellij download link and maybe an install script that fetches a license.
+    (_NOW BUILTIN TO SCRIPT_)
 - [ ] Support more operating systems:
     - MacOS
     - CentoS
 
 ## License
 
-MIT © [mijdavis2](http://mdavisinsc.com)
+MIT © [mijdavis2](http://mdavis.io)
