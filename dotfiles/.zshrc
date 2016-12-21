@@ -53,7 +53,7 @@ setopt ZLE
 setopt NO_HUP
 
 # only fools wouldn't do this ;-)
-export EDITOR="subl -n -w"
+export EDITOR="vim"
 
 setopt IGNORE_EOF
 
