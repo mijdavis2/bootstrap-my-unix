@@ -1,6 +1,17 @@
 # Bootstrap My Unix
 
-A collection of configs and resources for setting up a development environment.
+**_Setup a new dev compy in no time!_** 
+
+This setup includes installation of: 
+  - common apt packages
+  - java8
+  - python3
+  - nodejs6
+  - zsh
+  - zprezto
+  - customized configs for git, vim, etc.
+  
+**Caveats**: Currently only supports debian/ubuntu based compies. _OSX support soon to come!_
 
 # Instructions
 
