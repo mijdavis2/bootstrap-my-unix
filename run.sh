@@ -35,6 +35,7 @@ cp dotfiles/.gitconfig ~/.gitconfig
 cp dotfiles/.vimrc ~/.vimrc
 cp dotfiles/.zpreztorc ~/.preztorc
 cp dotfiles/.zshrc ~/.zshrc
+cp dotfiles/.zprofile ~/.zprofile
 cp zprezto-themes/prompt_garrett_setup ~/.zprezto/modules/prompt/functions/prompt_garrett_setup
 source ~/.zshrc
 
