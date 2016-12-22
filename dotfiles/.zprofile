@@ -78,3 +78,5 @@ setopt hist_ignore_all_dups
 export HISTFILE=~/.zsh_history
 export HISTSIZE=999999999
 export SAVEHIST=$HISTSIZE
+
+export GOPATH=~/gocode
