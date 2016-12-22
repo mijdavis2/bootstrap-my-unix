@@ -7,6 +7,7 @@ This setup includes installation of:
   - java8
   - python3
   - nodejs6
+  - go
   - zsh
   - zprezto
   - customized configs for git, vim, etc.
