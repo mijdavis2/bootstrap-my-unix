@@ -8,10 +8,9 @@ sudo apt-get update && sudo apt-get upgrade -yq
 sudo apt-get install -y build-essentials git vim curl yarn 
 
 # Install Go
-sudo apt-get install -y golang
-mkdir -p ~/gocode/src
-mkdir -p ~/gocode/pkg
-mkdir -p ~/gocode/bin
+wget https://storage.googleapis.com/golang/go1.7.linux-amd64.tar.gz
+sudo tar -xvf go1.7.linux-amd64.tar.gz
+sudo mv go /usr/local
 
 # Install Java8
 sudo apt-get install -y python-software-properties debconf-utils
