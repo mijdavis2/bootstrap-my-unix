@@ -20,7 +20,7 @@ sudo apt-get install -y oracle-java8-installer
 # Install Nodejs and globals
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 sudo apt-get install -y nodejs
-sudo npm install -g gulp firebase-tools aureali-cli
+sudo npm install -g gulp firebase-tools aurelia-cli
 
 # Install Python3
 sudo apt-get install -y python3
