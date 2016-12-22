@@ -73,10 +73,13 @@ fi
 
 TMPPREFIX="${TMPDIR%/}/zsh"
 
+# History configs
 setopt hist_ignore_all_dups
-
 export HISTFILE=~/.zsh_history
 export HISTSIZE=999999999
 export SAVEHIST=$HISTSIZE
 
+# Go configs
+export GOROOT=/usr/local/go
 export GOPATH=~/gocode
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
