@@ -5,7 +5,7 @@ sudo add-apt-repository -y ppa:webupd8team/java
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 sudo apt-get update && sudo apt-get upgrade -yq
-sudo apt-get install -y build-essentials git vim curl yarn
+sudo apt-get install -y build-essentials git vim curl yarn golang
 
 # Install Java8
 sudo apt-get install -y python-software-properties debconf-utils
