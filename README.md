@@ -39,10 +39,10 @@ chmod +x run.sh
 
 ## Intellij
 
-Get license key logging in here: https://account.jetbrains.com/licenses/assets
+Get license key logging in [here](https://account.jetbrains.com/licenses/assets).
 
-Additional downloads here: https://confluence.jetbrains.com/display/IntelliJIDEA/Previous+IntelliJ+IDEA+Releases
-    - 
+Additional downloads [here](https://confluence.jetbrains.com/display/IntelliJIDEA/Previous+IntelliJ+IDEA+Releases).
+    
 ```bash
 tar xfz ideaIU-VERSION.tar.gz
 sudo mv idea-IU-VERSION /usr/lib
