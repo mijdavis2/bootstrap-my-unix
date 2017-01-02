@@ -3,6 +3,7 @@
 **_Setup a new dev compy in no time!_** 
 
 This setup includes installation of: 
+
   - common apt packages
   - java8
   - python3
