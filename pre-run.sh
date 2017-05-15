@@ -58,7 +58,7 @@ eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/bs_id_rsa
 
 # Install git so we can `git clone` the repo after adding new ssh key
-sudo apt-get instally -y git
+sudo apt-get install -y git
 
 sleep 1
 sudo apt-get install -yq xclip
