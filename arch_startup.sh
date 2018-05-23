@@ -34,3 +34,13 @@ git clone https://github.com/tomlion/vim-solidity.git ~/.vim_runtime/sources_non
 # Ethereum in-mem blockchain and solidity compiler
 npm install -g ganache-cli
 npm install -g solc
+
+# Print instructions for installing latest aurman
+echo "Get aurman via:
+cd ~/Downloads
+git clone https://aur.archlinux.org/aurman.git
+cd aurman
+makepkg -Acs
+# Change xxx below to downloaded version
+sudo pacman -U aurman-xxx.pkg.tar.xz"
+
