@@ -15,6 +15,17 @@ This setup includes installation of:
   
 **Caveats**: Currently only supports debian/ubuntu based compies. _OSX support soon to come!_
 
+# Tips and tricks
+
+### Python
+
+One should usually use tox or a virtualenv for projects, but sometimes you just want to use python from the cli or across projects. This can be annoying when pip installing or changing python versions.
+
+To never pip install to system and instead use local user packages:
+- use [pyenv](https://github.com/pyenv/pyenv) for managing python versions
+- use `pip install --user`
+- in .zprofile add `export PATH=$HOME/.local/bin:$PATH`
+
 # Instructions
 
 ### Run pre-requisites
