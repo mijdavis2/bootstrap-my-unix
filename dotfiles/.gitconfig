@@ -23,6 +23,8 @@
     upstream = "!git rev-parse --abbrev-ref $(git branch-name)@{upstream}"
     grepall = !"grepall() { git grep $* $(git rev-list --all); }; grepall"
     ignore=!([ ! -e .gitignore ] && touch .gitignore) | echo $1 >>.gitignore
+    cleanup = "!git branch --merged | grep  -v '\\*\\|master\\|develop' | xargs -n 1 git branch -d"
+
 
 #[credential]
 #	helper = osxkeychain
