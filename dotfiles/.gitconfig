@@ -1,5 +1,5 @@
 [core]
-	editor = vim
+    editor = vim
 
 [alias]
     reup = !git fetch && git rebase origin/master
@@ -27,4 +27,4 @@
 
 
 #[credential]
-#	helper = osxkeychain
+#    helper = osxkeychain
