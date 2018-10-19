@@ -37,7 +37,9 @@ curl -L https://git.io/n-install | bash
 ### guake
 
 1. Install guake
-1. Add guake to startup. For example: `ln -s /usr/share/applications/guake.desktop /etc/xdg/autostart/`
+1. Add guake to startup.
+For example:
+`ln -s /usr/share/applications/guake.desktop /etc/xdg/autostart/`
 1. Set F12 to `/usr/bin/guake` hotkey explicitly if it doesn't work
 (if for instance you are using KDE plasma)
 
