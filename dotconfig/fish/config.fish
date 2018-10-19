@@ -1,7 +1,3 @@
-# Fundle plugin management
-fundle plugin 'edc/bass'
-fundle init
-
 # Support vi mode
 fish_vi_key_bindings
 
@@ -15,10 +11,15 @@ function sudo
 end
 
 # Pyenv setup
-set -x PATH "/home/mdavis/.pyenv/bin" $PATH
+set -x PATH "$HOME/.pyenv/bin" $PATH
 status --is-interactive; and . (pyenv init -|psub)
 status --is-interactive; and . (pyenv virtualenv-init -|psub)
 
-# N setup
-set -x N_PREFIX /home/mdavis
-set -x PATH /home/mdavis/n/bin $PATH
+# Fundle plugin management
+fundle plugin 'edc/bass'
+
+fundle init
+
+# Path configs
+set -x N_PREFIX $HOME
+set -x PATH $HOME/n/bin $PATH
