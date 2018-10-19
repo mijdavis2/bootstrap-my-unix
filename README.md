@@ -13,7 +13,7 @@ This setup includes installation of:
 - zprezto
 - customized configs for git, vim, etc.
 
-**Caveats**: Currently only supports debian/ubuntu based compies. _OSX support soon to come!_
+**Caveats**: Currently only supports debian/ubuntu and arch.
 
 ## Tips and tricks
 
