@@ -13,7 +13,7 @@ end
 # Pyenv setup
 set -x PATH "$HOME/.pyenv/bin" $PATH
 status --is-interactive; and . (pyenv init -|psub)
-status --is-interactive; and . (pyenv virtualenv-init -|psub)
+#status --is-interactive; and . (pyenv virtualenv-init -|psub)
 
 # Fundle plugin management
 fundle plugin 'edc/bass'
