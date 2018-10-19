@@ -1,34 +1,36 @@
 # Bootstrap My Unix
 
-**_Setup a new dev compy in no time!_** 
+**_Setup a new dev compy in no time!_**
 
-This setup includes installation of: 
+This setup includes installation of:
 
-  - common apt packages
-  - java8
-  - python3
-  - nodejs6
-  - go
-  - zsh
-  - zprezto
-  - customized configs for git, vim, etc.
-  
+- common apt packages
+- java8
+- python3
+- nodejs6
+- go
+- zsh
+- zprezto
+- customized configs for git, vim, etc.
+
 **Caveats**: Currently only supports debian/ubuntu based compies. _OSX support soon to come!_
 
-# Tips and tricks
+## Tips and tricks
 
 ### Python
 
 One should usually use tox or a virtualenv for projects, but sometimes you just want to use python from the cli or across projects. This can be annoying when pip installing or changing python versions.
 
 To never pip install to system and instead use local user packages:
+
 - use [pyenv](https://github.com/pyenv/pyenv) for managing python versions
 - use `pip install --user`
 - in .zprofile add `export PATH=$HOME/.local/bin:$PATH`
 
-# Instructions
+## Instructions
 
 ### Run pre-requisites
+
 - Creates rsa key for github
 - Follow instructions on completion
 
@@ -39,6 +41,7 @@ wget https://raw.githubusercontent.com/mijdavis2/bootstrap-my-unix/master/pre-ru
 ```
 
 ### Clone the repo and run
+
 - Note that you will be prompted for your password
 
 ```bash
@@ -53,7 +56,7 @@ chmod +x run.sh
 Get license key logging in [here](https://account.jetbrains.com/licenses/assets).
 
 Additional downloads [here](https://confluence.jetbrains.com/display/IntelliJIDEA/Previous+IntelliJ+IDEA+Releases).
-    
+
 ```bash
 tar xfz ideaIU-VERSION.tar.gz
 sudo mv idea-IU-VERSION /usr/lib
@@ -64,7 +67,7 @@ sudo mv idea-IU-VERSION /usr/lib
 
 **Python3.6**
 
-```
+```bash
 sudo add-apt-repository ppa:fkrull/deadsnakes
 sudo apt-get update
 sudo apt-get install python3.6
@@ -72,7 +75,7 @@ sudo apt-get install python3.6
 
 **Python2.7.11**
 
-```
+```bash
 sudo apt-get install -y \
 autotools-dev      \
 blt-dev            \
@@ -114,17 +117,17 @@ sudo make install
 sudo ln -s /usr/local/lib/python2.7.11/bin/python /usr/bin/python2.7.11
 ```
 
-### TODO:
+### TODO
 
-- [x] Add install script to do all the following: 
-    - git-bash-prompt install
-    - dotfile installs
+- [x] Add install script to do all the following:
+  - git-bash-prompt install
+  - dotfile installs
 - [x] Add extra support:
-    - JAVA_HOME template and link to java jdk download page
+  - JAVA_HOME template and link to java jdk download page
     (_NOW BUILTIN TO SCRIPT_)
 - [ ] Support more operating systems:
-    - MacOS
-    - CentoS
+  - MacOS
+  - CentoS
 
 ## License
 
