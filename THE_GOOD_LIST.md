@@ -8,7 +8,7 @@ Testing too many distros to automate for all of them (till I get ansible working
 
 - fish
 - fundle
-- cp fish/config.fish to `~/.config/fish/config.fish`
+- `cp ./dotconfig/fish/* ~/.config/fish/`
 
 ## Essentials
 
