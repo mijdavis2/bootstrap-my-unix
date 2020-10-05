@@ -10,9 +10,9 @@ and the Arch community doesn't want to bother with supporting or helping Manjaro
 
 #### Archcraft
 
-[Archcraft](https://archcraft-os.github.io/) is a custom ISO of Arch. The creator has included a ton of beautiful themes
-and helpful scripts and wrappers to make Arch easier to install, configure, etc. Much of this help guide is based on
-defaults from Archcraft.
+[Archcraft](https://archcraft-os.github.io/) is a nice custom ISO of Arch. It is still, at it's core, Arch. 
+The creator has included a ton of beautiful themes and helpful scripts and wrappers to make Arch easier to install,
+configure, etc. Much of this help guide is based on defaults from Archcraft.
 
 ## Battery
 
